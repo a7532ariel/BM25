@@ -1,10 +1,8 @@
 import os
 import re
-import math
 import numpy as np
 import pandas as pd
 import xml.etree.ElementTree as ET
-import pickle
 import logging
 import time
 from tqdm import tqdm
@@ -17,7 +15,7 @@ news_path = './CIRB010'
 
 cdef int num_docs = 46972
 cdef int avg_len = 688
-cdef float k = 1.5
+cdef float k = 1.2
 cdef float b = 0.75
 cdef float k_q = 100
 cdef int alpha = 1
